@@ -10,7 +10,6 @@ bot = telegram.Bot(token=user_data['token'])
 
 
 def send_message(text, **kwargs):
-    print(text)
     bot.send_message(chat_id=user_data['chat_id'], text=text, **kwargs)
 
 
